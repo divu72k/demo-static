@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hospital Registration - Step 2</h2>
+        <form action="page3.html" method="post">
+	<img src="logo.webp" alt="Hospital Logo" class="logo">
+            <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <input type="hidden" name="age" value="<?php echo htmlspecialchars($_POST['age']); ?>">
+            <input type="hidden" name="contact" value="<?php echo htmlspecialchars($_POST['contact']); ?>">
+            <input type="hidden" name="gender" value="<?php echo htmlspecialchars($_POST['gender']); ?>">
+
+            <label for="allergies">Known Allergies:</label>
+            <textarea id="allergies" name="allergies"></textarea>
+
+            <label for="current-medications">Current Medications:</label>
+            <textarea id="current-medications" name="current_medications"></textarea>
+
+            <label for="past-conditions">Past Medical Conditions:</label>
+            <textarea id="past-conditions" name="past_conditions"></textarea>
+
+            <button type="submit">Next</button>
+        </form>
+	<form action="page3.php" method="post">
+    </div>
+</body>
+</html>

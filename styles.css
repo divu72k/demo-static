@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #1e1e1e; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1; 
+}
+
+.container {
+    max-width: 600px;
+    width: 90%; 
+    padding: 20px;
+    background-color: #252526; 
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border: 1px solid #3c3c3c; 
+}
+
+
+.logo {
+    width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+
+h2 {
+    text-align: center;
+    color: #3399ff; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+
+form {
+    width: 100%; 
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #cccccc; 
+}
+
+form input,
+form textarea,
+form select,
+form button {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555555;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 1rem;
+    background-color: #1e1e1e; 
+    color: #f1f1f1; 
+}
+
+
+form textarea {
+    height: 150px; 
+    resize: none; 
+}
+
+form button {
+    background-color: #3399ff; 
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+    background-color: #2678cc; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+}
+
